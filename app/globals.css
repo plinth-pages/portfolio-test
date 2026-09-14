@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+/*
+  Theme tokens. app/layout.tsx sets the --plinth-* variables from content/theme.ts; these utilities
+  (bg-surface, text-ink, text-muted, border-line, bg-card, bg-accent, rounded-page, font-page) read
+  them, so changing the theme never requires touching a component.
+*/
+:root {
+  --plinth-bg: #ffffff;
+  --plinth-fg: #18181b;
+  --plinth-muted: #71717a;
+  --plinth-border: #e4e4e7;
+  --plinth-card: #fafafa;
+  --plinth-accent: #2563eb;
+  --plinth-accent-fg: #ffffff;
+  --plinth-radius: 0.75rem;
+  --plinth-space: 5rem;
+  --plinth-font: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+}
+
+@theme inline {
+  --color-surface: var(--plinth-bg);
+  --color-card: var(--plinth-card);
+  --color-ink: var(--plinth-fg);
+  --color-muted: var(--plinth-muted);
+  --color-line: var(--plinth-border);
+  --color-accent: var(--plinth-accent);
+  --color-accent-fg: var(--plinth-accent-fg);
+  --radius-page: var(--plinth-radius);
+  --font-page: var(--plinth-font);
+}
+
+body {
+  background: var(--plinth-bg);
+  color: var(--plinth-fg);
+  font-family: var(--plinth-font);
+  -webkit-font-smoothing: antialiased;
+}
