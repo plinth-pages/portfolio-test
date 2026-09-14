@@ -1,8 +1,8 @@
 import type { Theme } from "./types";
 
 export const theme: Theme = {
-  mode: "light",
-  accent: "#2563eb",
+  mode: "dark",
+  accent: "#059669",
   font: "sans",
   spacing: "comfortable",
   radius: "rounded",
