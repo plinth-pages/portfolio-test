@@ -1,32 +1,36 @@
 import type { Profile } from "./types";
 
 export const profile: Profile = {
-  name: "Sumit Verma",
-  title: "Student",
-  headline: "I'm learning by building — here's what I've made so far.",
+  name: "Sumit",
+  title: "Software engineer",
+  headline: "I build reliable software and the tools that make shipping it faster.",
   email: "",
   cta: {
-    label: "Contact me",
+    label: "Get in touch",
     href: "#contact",
   },
   about: [
-    "I'm studying and spending my spare time on projects that teach me something new.",
-    "I'm looking for internships and chances to learn from experienced teams.",
+    "I enjoy working across the stack, but I'm happiest making systems simpler, faster and easier to operate.",
+    "Below are a few projects I'm proud of. Most of my work lives on GitHub.",
   ],
   stats: [
     {
-      label: "Projects",
+      label: "Public repositories",
+      value: "0",
+    },
+    {
+      label: "Stars earned",
+      value: "0",
+    },
+    {
+      label: "Followers",
+      value: "0",
+    },
+    {
+      label: "Years on GitHub",
       value: "1",
-    },
-    {
-      label: "Hackathons",
-      value: "2",
-    },
-    {
-      label: "Courses completed",
-      value: "12",
     },
   ],
   socials: [],
-  contactNote: "Open to internships, hackathons and study groups.",
+  contactNote: "Open to interesting engineering problems and collaborations.",
 };
